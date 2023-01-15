@@ -12,14 +12,14 @@ from flask import Flask as flask
 app = flask(__name__)
 
 
-@app.route("/", strict_slashes=False)
+@app.route('/', strict_slashes=False)
 def hello_hbnb():
     """
     Route:
-    /: displays “Hello HBNB!”
+    /: displays 'Hello HBNB!'
     """
-    return (f"Hello HBNB!")
+    return ('Hello HBNB!')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run()
