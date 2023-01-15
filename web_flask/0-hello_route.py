@@ -7,13 +7,13 @@ Routes:
 /: display “Hello HBNB!”
 must use the option strict_slashes=False in your route definition
 """
-from flask import Flask
+from flask import Flask as flask
 
-app = Flask(__name__)
+app = flask(__name__)
 
 
 @app.route("/", strict_slashes=False)
-def home():
+def hello_hbnb():
     """
     Route:
     /: displays “Hello HBNB!”
@@ -22,4 +22,4 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
