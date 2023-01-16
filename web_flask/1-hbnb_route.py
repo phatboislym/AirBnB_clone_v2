@@ -19,7 +19,7 @@ def hello_hbnb():
     Route:
     /: displays 'Hello HBNB!'
     """
-    return (f'Hello HBNB!')
+    return ('Hello HBNB!')
 
 
 @app.route('/hbnb', strict_slashes=False)
@@ -28,7 +28,7 @@ def hbnb():
     Route:
     /hbnb: displays “HBNB”
     """
-    return (f'HBNB')
+    return ('HBNB')
 
 
 if __name__ == '__main__':
