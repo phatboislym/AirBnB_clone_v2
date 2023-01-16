@@ -40,7 +40,8 @@ def c_is(text):
     /c/<text>: displays “C ” followed by the value of the text variable
         (replace underscore _ symbols with a space )
     """
-    response = f'C {text.replace("_", " ")}'
+    text = text.replace("_", " ")
+    response = "C {}".format(text)
     return (response)
 
 
